@@ -13,7 +13,7 @@ color: white;
 align-items: center;
 padding: 0px 30px;
 position: sticky;
-z-index: 100;
+/* z-index: 100; */
 top: 0px;
 
 }
@@ -36,6 +36,10 @@ width: 40%;
 }
 #color{
 color: white;
+text-decoration: none;
+}
+#Account{
+    color: white;
 text-decoration: none;
 }
 #col{
@@ -139,9 +143,10 @@ width: 350px;
 height: 50px;
 
 }
+
 #height{
 height: 50px;
-width: 40px;  
+width: 60px;  
 }
 #inp{
 height: 50px;
@@ -184,4 +189,8 @@ a{
     width: 30px;
     background-color: black;
 
+}
+#Account{
+    text-decoration: none;
+  
 }

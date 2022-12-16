@@ -6,9 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Company</title>
    <link rel="stylesheet" href="./index.css">
+   <link rel="stylesheet" href="./login.css">
+   
    
 </head>
 <body>
+    <!-- <div id="myNav" class="overlay">
+  
+        <div class="overlay-content">
+          <div class="top">
+              <a  class="closebtn" onclick="closeNav()">&times;</a>
+              <h3>please login to continue</h3>
+          </div>
+          <div class="middle">
+              <div>
+                  
+                  <select name="cars" id="cars">
+                  <option value="india">
+                      <span class="flag">+91</span>
+                  </option>
+                  <option value="india">
+                      <span class="flag">+1</span>
+                  </option>
+                  <option value="india">
+                      <span class="flag">+65</span>
+                  </option>
+                  <option value="india">
+                      <span class="flag">+966</span>
+                  </option>
+                  <option value="india">
+                      <span class="flag">+971</span>
+                  </option>
+                </select>
+              </div>
+              <input type="text" placeholder="Your phone number">
+          </div>
+          <div class="bottom">
+              <button>Continue</button>
+          </div>
+        </div>
+      </div> -->
  
         <nav  id="navbar">
         <div>
@@ -31,17 +68,16 @@
                 <h3>Help Center</h3>
             </a>
         </div>
+       
+       
+          
         <div>
-            <a id="color"  href="">
-                <h3>login</h3>
-            </a>
-        </div>
-        <div>
-            <a  id="color" href="">
-                <h3>Signup</h3>
-            </a>
+            <a href="" onclick="openForm()"><h3 id="Account">Login/Sign Up</h3></a>
         </div>
     </nav>
+    
+
+
 <div id="container">
     <div id="image-div">
         <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_19be5040.jpeg" alt="">
@@ -55,72 +91,19 @@
             <p>Where do you need a service?</p>
             <select name="" id="">
                 <option value="">Select your city</option>
-                <option value=""><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt=""> United State</option>
-                <option value=""> </option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">
+                    
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt=""> United State</option>
+                <option value="">Austin </option>
+                <option value=""> Dallas</option>
+                <option value=""> NewYorkcity</option>
+                <option value="">INDIA</option>
+                <option value="">Agra</option>
+                <option value=""> Ahmedabad</option>
+                <option value=""> Alwar</option>
+                
+                <option value="">UAE</option>
+                <option value="">Abudhabi</option>
             </select>
            
                 </div>
@@ -180,7 +163,23 @@
         <h1>Book professionals from your phone</h1>
         <p>Enter your mobile number to get the App download link</p>
         <div id="number">
-            <select name="" id="height"></select>
+            <select name="" id="height">
+                <option value="india">
+                    <span class="flag">+91</span>
+                </option>
+                <option value="india">
+                    <span class="flag">+1</span>
+                </option>
+                <option value="india">
+                    <span class="flag">+65</span>
+                </option>
+                <option value="india">
+                    <span class="flag">+966</span>
+                </option>
+                <option value="india">
+                    <span class="flag">+971</span>
+                </option>
+            </select>
             <input type="text" id="inp">
             <button id="btn">send</button>
         </div>
@@ -368,6 +367,39 @@
                     </div>
                 </nav>
    </div>
+   <div class="form-popup" id="myForm">
+          <form class="form-container">
+           <div id="logincrossflex"> <i onclick="closeForm()"  class="fa-solid fa-xmark"></i> <h3> Please login to continue</h3></div>
+        
+            <div id="phoneflex">  
+                <div>
+                    <img src="data:image/png;base64,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" alt="">
+                    <h3>+91</h3>
+                </div>
+            <input type="text" placeholder="Your phone number" name="phonenumber" id="phonenumber" required >
+        </div>
+            <button  class="btn" onclick="Continue()">Continue</button>
+            
+          </form>
+        </div>
+        
+        <div class="formotp" id="otpform">
+          <form  class="form-container">
+           <div id="logincrossflex">  <h3> Please login to continue</h3></div>
+          <div id="childotp">    <h3>Enter verification code</h3>  <p id="number"> We have sent you 4 digit otp on your phone </p></div>
+            <div id="otpflex">  
+            <input type="text" name="phone" required>
+            <input type="text"  name="phone" required>
+            <input type="text" name="phone" required>
+            <input type="text" name="phone" required>
+        </div>
+        <h3 style="text-align:center; color:blue"> Resend OTP</h3>
+            <button type="submit" class="btn" onclick="Ac()">Login</button>
+            
+          </form>
+        </div>
+        <script src="./login.js"></script>
+    </script>
 </body>
 
 </html>

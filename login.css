@@ -1,0 +1,120 @@
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 100000;
+    height: 100%;
+    background-color: white;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  }
+  input{
+    outline: none;
+  }
+  
+  #logincrossflex{
+      display:flex;
+     align-items: center;
+     padding-left: 20px;
+     margin-bottom:23px;
+     border-bottom: 1px solid silver;
+  }
+  #logincrossflex i{
+      margin-right: 15px;
+     
+  }
+  #phoneflex img{
+      width: 23px;
+      height: 20px;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+  #phoneflex div{
+      display: flex;
+      align-items: center;
+    
+      border-right: 1px solid silver;
+      padding-right: 10px;
+  
+  }
+  #phoneflex{
+      display: flex;
+      align-items: center;
+      border: 1px solid silver;
+      width: 90%;
+      margin: auto;
+      border-radius:5px
+  }
+  #phoneflex input{
+     
+     padding-top: -10px;
+      border: none;
+     
+  }
+  #phoneflex input:placeholder-shown{
+      font-size: 16px;
+      padding-left: 20px;
+   
+  }
+  .btn{
+      display: block;
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+      background-color: black;
+      color: white;
+      padding: 10px 0px;
+      font-size: 20px;
+      border-radius:5px
+  }
+
+  .formotp {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    height: 100%;
+    width: 25%;
+    background-color: white;
+  }
+  
+  
+  
+
+  
+  #otpflex div{
+      display: flex;
+      align-items: center;
+    
+      border-right: 1px solid silver;
+      padding-right: 10px;
+  
+  }
+  #otpflex{
+      display: flex;
+  width: 70%;
+      margin: auto;
+      border-radius:5px
+  }
+  #otpflex input{
+     width:40px;
+     padding-top: -10px;
+  height: 40px;
+  padding: 1px;
+  margin: auto;
+  }
+  
+
+  #childotp{
+      width: 60%;
+      margin:auto;
+  }
+  #phonenumber{
+    padding: 18px 13px 18px 10px;
+    border: none;
+  }
