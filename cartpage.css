@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartpage.css" />
+  </head>
+  <body>
+    <div id="summary">
+      <div id="nav">
+        <a href="beforecart.html">
+          <svg
+          id="leftArrow"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+          />
+        </svg>
+        </a>
+        <p>Summary</p>
+      </div>
+
+      <hr />
+      <div id="cartpagebar">
+        <p>Payment summary</p>
+        <div id="payment">
+          <div>
+            <p>Item total</p>
+            <p id="total"></p>
+          </div>
+          <div>
+            <p>item discount</p>
+            <p id="discount"></p>
+          </div>
+          <div>
+            <p>Convenience Fee</p>
+            <p id="confee"></p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div id="paymentfinal">
+          <p>Total</p>
+          <p id="totalfinal"></p>
+        </div>
+
+        <p id="saving">Yay! you have saved ₹50 on final bill</p>
+        <hr />
+      </div>
+    </div>
+    <p id="savebar">
+      You're saving total ₹50 on this order!
+      <img id="coin" src="images/download.png" alt="coins" />
+      <hr  width="45%" style="margin-left:10% ;"/>
+    </p>
+  
+    <div id="container">
+      <hr />
+    </div>
+   <a href="payment.html"><button id="OrderPlace">Proceed to Pay</button></a> 
+  </body>
+  </html>
+  <script src="cartpage.js"></script>
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cart Page</title>
+      <link rel="stylesheet" href="cartpage.css" />
+    </head>
+    <body>
+      <div id="summary">
+        <div id="nav">
+          <a href="beforecart.html">
+            <svg
+            id="leftArrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+            />
+          </svg>
+          </a>
+          <p>Summary</p>
+        </div>
+  
+        <hr />
+        <div id="cartpagebar">
+          <p>Payment summary</p>
+          <div id="payment">
+            <div>
+              <p>Item total</p>
+              <p id="total"></p>
+            </div>
+            <div>
+              <p>item discount</p>
+              <p id="discount"></p>
+            </div>
+            <div>
+              <p>Convenience Fee</p>
+              <p id="confee"></p>
+            </div>
+          </div>
+  
+          <hr />
+  
+          <div id="paymentfinal">
+            <p>Total</p>
+            <p id="totalfinal"></p>
+          </div>
+  
+          <p id="saving">Yay! you have saved ₹50 on final bill</p>
+          <hr />
+        </div>
+      </div>
+      <p id="savebar">
+        You're saving total ₹50 on this order!
+        <img id="coin" src="images/download.png" alt="coins" />
+        <hr  width="45%" style="margin-left:10% ;"/>
+      </p>
+    
+      <div id="container">
+        <hr />
+      </div>
+     <a href="payment.html"><button id="OrderPlace">Proceed to Pay</button></a> 
+    </body>
+    </html>
+    <script src="cartpage.js"></script>
+  
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      #summary {
+        /* border: 1px solid red; */
+        width: 85%;
+        margin: auto;
+        position: sticky;
+        top: 0;
+        background-color: white;
+      }
+      #nav > p {
+        font-size: 20px;
+        font-weight: 550;
+        color: rgba(23, 20, 20, 0.904);
+      }
+      #nav {
+        display: flex;
+        gap: 20px;
+      }
+      #nav > :first-child {
+        display: flex;
+      }
+      #cartpagebar {
+        position: sticky;
+        float: right;
+        width: 40%;
+        /* border: 1px solid red; */
+        padding-left: 20px;
+        height: 500px;
+      }
+      #cartpagebar > p {
+        font-weight: 700;
+      }
+      
+      #paymentfinal > :first-child {
+        font-weight: 700;
+      }
+      
+      #container {
+        width: 45%;
+        margin-left: 10%;
+      }
+      #savebar {
+        width: 45%;
+        margin-left: 10%;
+        display: flex;
+        font-size: 12px;
+        /* margin-top: 100px; */
+        justify-content: space-between;
+      }
+      #coin {
+        width: 40px;
+      }
+      #leftArrow {
+        width: 20px;
+      }
+      #namediv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #container > div > h5 {
+        width: 80%;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      #price {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid rgb(108, 41, 163);
+        color: #6e42e5;
+        width: 100px;
+        height: 40px;
+        box-shadow: rgb(220, 198, 238) 0px 1px 3px 0px,
+          rgb(224, 209, 237) 0px 0px 0px 1px;
+        border-radius: 10px;
+        justify-content: space-around;
+      }
+      #price > :first-child,
+      #price > :last-child {
+        cursor: pointer;
+      }
+      #price + div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+      }
+      #price + div > p {
+        margin-bottom: 0px;
+        margin-top: 0;
+      }
+      #price + div > :last-child {
+        text-decoration: line-through;
+      }
+      #container > div > div {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+      }
+      #list {
+        display: block;
+        font-size: 13px;
+      }
+      .edit {
+        padding: 10px 10px;
+        background-color: white;
+        border: 1px solid silver;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgb(50, 49, 49);
+      }
+      
+      #OrderPlace {
+        display: flex;
+        position: sticky;
+        width: 33%;
+        left: 100%;
+        margin-right: 7%;
+        justify-content: center;
+        align-items: center;
+        bottom: o;
+        height: 50px;
+        flex-shrink: 0;
+        background-color: #6e42e5;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 10px;
+        margin-top: 150px;
+      }
+      #payment > div {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+      }
+      #paymentfinal {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+      }
+      hr {
+        color: #e3e3e3;
+      }
+      #saving {
+        background-color: #edf7f2;
+        text-align: center;
+        padding: 10px;
+        color: rgb(9, 95, 60);
+      }
+      body > a:last-of-type {
+        text-decoration: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+        

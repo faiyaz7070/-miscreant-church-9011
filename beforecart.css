@@ -1,0 +1,367 @@
+body {
+    font-family: os_bold;
+    margin: 0;
+    padding: 0;
+  }
+  hr {
+    height: 10px;
+    border: none;
+    background-color: #f5f5f5;
+  }
+  #topnav {
+    background-image: url("images/Untitled-1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position-x: right;
+    background-position-y: -200px;
+    background-size: 450px;
+    display: flex;
+    /* border: 1px solid rebeccapurple; */
+    justify-content: space-between;
+  
+    /* height: 400px; */
+  }
+  #topnav > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-left: 10%;
+    margin-top: 50px;
+  }
+  
+  #topnav > :first-child > img {
+    width: 18%;
+    margin-top: 50px;
+    /* margin-left: 5%; */
+  }
+  #leftArrow {
+    width: 20px;
+  }
+  #coin {
+    width: 25px;
+  }
+  #topnav > div > :last-child {
+    display: flex;
+    color: rgb(131, 188, 166);
+    font-size: 14px;
+    align-items: center;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  #contents {
+    width: 80%;
+    margin: auto;
+    display: grid;
+  
+    gap: 20px;
+    grid-template-columns: 60% 40%;
+  }
+  #contents > :last-child {
+    /* border: 1px solid red; */
+    /* height: 1000px; */
+  }
+  
+  /* ***********Benefits************ */
+  #benefits {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  #benefits > :first-child {
+    /* border: 1px solid red; */
+    width: 8%;
+  }
+  #benefits > div > img {
+    width: 100%;
+  }
+  .bold {
+    font-weight: 600;
+  }
+  #benefits > :last-child {
+    margin-left: 20px;
+  }
+  #benefits > :last-child > p:last-of-type {
+    margin-top: -10px;
+  }
+  
+  /* ************estimated************** */
+  
+  #Estimated > div {
+    display: flex;
+  }
+  #Estimated > div:first-of-type {
+    justify-content: space-between;
+  }
+  
+  #years {
+    gap: 5px;
+    margin-top: -20px;
+  }
+  #years > p {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  h1 {
+    color: #07794c;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+  #Estimated > :last-child > i {
+    margin-right: 10px;
+  }
+  /* *******Plus in Numbers****** */
+  #cards {
+    /* width: 90%;
+    margin: auto; */
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #cards > div {
+    /* border: 1px solid rebeccapurple; */
+    /* overflow: none; */
+    border-radius: 10px;
+  }
+  #cards > :first-child {
+    background-color: rgb(237, 247, 242);
+  }
+  #cards > :nth-child(2) {
+    background-color: rgb(242, 240, 255);
+  }
+  #cards > :nth-child(3) {
+    background-color: rgb(255, 247, 214);
+  }
+  #cards > :nth-child(4) {
+    background-color: rgb(253, 243, 242);
+  }
+  #cards img {
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #cards > div > p:first-of-type {
+    color: black;
+  }
+  #cards p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(84, 84, 84);
+  }
+  
+  /* *********FAQs******* */
+  /* #parent {
+    width: 90%;
+    margin: auto;
+  } */
+  #parent > div {
+    border-bottom: 1px solid silver;
+  }
+  #flex1,
+  #flex2,
+  #flex3,
+  #flex4,
+  #flex5,
+  #flex6,
+  #flex7,
+  #flex8,
+  #flex9 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+  }
+  #parent > div > :last-child {
+    font-size: 15px;
+  }
+  
+  /* **********HAPPY MEMBERS******** */
+  /* #members {
+    width: 90%;
+    margin: auto;
+  } */
+  #members > :first-child > div > img {
+    width: 20%;
+    height: 70%;
+    border-radius: 10px;
+  }
+  #members > div {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+  }
+  #members > div > :first-child {
+    display: flex;
+    width: 50%;
+    align-items: center;
+  
+    /* border: 1px solid green; */
+  }
+  #members > div > :first-child > div > p {
+    margin-left: 10px;
+    color: #0f0f0f;
+  }
+  #members > div > :first-child > div > :last-child {
+    color: #757575;
+    margin-top: -10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  #members > div > :last-child {
+    display: flex;
+  
+    flex-direction: column;
+  
+    /* background-color: aqua; */
+  }
+  #members > div > :last-child > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+  }
+  #members > div > :last-child > div > img {
+    width: 25%;
+    height: 60%;
+  }
+  #members > div > :last-child > div + p {
+    margin-top: -10px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #757575;
+  }
+  
+  #members > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* h3{
+      margin-bottom: 20px;
+  } */
+  
+  /* **********Sidebar****** */
+  /* *******Select Your Plan**** */
+  #Plans {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  #Plans > div {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  #Plans > div > p:first-of-type {
+    color: #07794c;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  #Plans > div > p:last-of-type {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -10px;
+    font-weight: 600;
+  }
+  
+  #Plans > div > div {
+    display: flex;
+    gap: 10px;
+    margin-top: -25px;
+  }
+  #Plans > div > div > p:last-of-type {
+    text-decoration: line-through;
+  }
+  
+  #plan1,
+  #plan2 {
+    width: 100px;
+    padding: 10px 10px;
+    color: #6e42e5;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  #membership {
+    margin-top: 30px;
+    color: #8a1e08;
+    text-align: center;
+    font-size: 20px;
+  }
+  #sidebar > a:last-of-type {
+    text-decoration: none;
+  }
+  
+  /* *******Procced Button ********** */
+  
+  #procced {
+    width: 33%;
+    float: right;
+    background-color: white;
+    display: flex;
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+    margin-right: 8%;
+    flex-direction: column;
+  }
+  #procced > p {
+    background-color: #edf7f2;
+    text-align: center;
+    color: #095f3c;
+    padding: 5px 0;
+  }
+  #procced > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  #procced > div > div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+  #procced > div > a {
+    width: 50%;
+  }
+  #payment {
+    background-color: #6e42e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  #total {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #sprice {
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+  /* mebership last thing */
+  html {
+    scroll-behavior: smooth;
+  }
+  

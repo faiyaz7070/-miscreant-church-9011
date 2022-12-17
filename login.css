@@ -4,7 +4,7 @@
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
-    z-index: 100000;
+    z-index: 9;
     height: 100%;
     background-color: white;
     width: 25%;
@@ -22,9 +22,8 @@
      margin-bottom:23px;
      border-bottom: 1px solid silver;
   }
-  #logincrossflex i{
-      margin-right: 15px;
-     
+  #fa-solid{
+    width: 15px;
   }
   #phoneflex img{
       width: 23px;
@@ -118,3 +117,4 @@
     padding: 18px 13px 18px 10px;
     border: none;
   }
+  

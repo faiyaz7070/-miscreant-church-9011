@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      #paymentParent {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: auto;
+        padding-left: 25px;
+        margin-top: 120px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 20px;
+      }
+
+      form {
+        font-size: 18px;
+        align-items: center;
+      }
+
+      input {
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 87%;
+        border-radius: 7px;
+      }
+
+      input[type="month"] {
+        width: 87%;
+      }
+
+      input[type="submit"] {
+        width: 97%;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      #Pay:hover {
+        transform: scale(1.055);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Payment Page</h1>
+    <div id="paymentParent">
+      <form action="">
+        <label for="number">Enter your Otp:</label> <br />
+        <input
+          type="text"
+          name=""
+          id="otp"
+          placeholder="Enter Your 4 digit Otp"
+        /><br />
+
+        <input type="submit" id="Pay" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit", done);
+  function done() {
+    event.preventDefault();
+    var number = document.getElementById("otp").value;
+    if (number.length == 4) {
+      alert("Payment Done");
+      var arr = [];
+      localStorage.setItem("items", JSON.stringify(arr));
+      localStorage.setItem("totalvalue", 0);
+      window.location.href = "index.html";
+    } else {
+      alert("Wrong Otp");
+    }
+  }
+</script>
