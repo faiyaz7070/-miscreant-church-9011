@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      #paymentParent {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: auto;
+        padding-left: 25px;
+        margin-top: 50px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+
+      form {
+        font-size: 18px;
+        align-items: center;
+      }
+
+      input {
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 87%;
+        border-radius: 7px;
+      }
+
+      input[type="month"] {
+        width: 87%;
+      }
+
+      input[type="submit"] {
+        width: 97%;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      #Pay:hover {
+        transform: scale(1.055);
+        background-color: rgb(55, 236, 39);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Payment Page</h1>
+    <div id="paymentParent">
+      <form action="">
+        <label for="name">Name:</label> <br />
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter Your Name"
+        /><br />
+        <label for="card">Card Number:</label><br />
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter your 16 digit cart number"
+        />
+        <br />
+        <label for=""> CVV :</label><br />
+        <input
+          type="number"
+          id="cvv"
+          placeholder="Enter your 3 digit cvv"
+        /><br />
+        <label for="expiry date"> Expiry Date:</label><br />
+        <input
+          type="date"
+          placeholder="Enter your expiry date"
+          id="date"
+        /><br />
+        <input type="submit" id="Pay" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit", Payment);
+  var payM = document.getElementById("Pay");
+  payM.value = "Proced to pay";
+
+  function Payment() {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var number = document.getElementById("number").value;
+    var cvv = document.getElementById("cvv").value;
+    var date = document.getElementById("date").value;
+
+    if (
+      number.length != 0 &&
+      cvv.length === 3 &&
+      date.length != 0 &&
+      name.length != 0
+    ) {
+      alert("Otp send to your mobile");
+      window.location.href = "./otp.html";
+    } else {
+      alert("Enter correct information");
+    }
+  }
+</script>
