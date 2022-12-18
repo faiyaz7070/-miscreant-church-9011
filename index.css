@@ -27,9 +27,13 @@ justify-content:space-evenly;
 #htop{
     font-size: 35px;
     color: white;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #topp{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 img{
 width: 40%;
